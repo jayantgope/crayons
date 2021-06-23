@@ -42,10 +42,10 @@ public class ReverseLinkedList {
 		Node nextNode;
 
 		while (currentNode != null) {
-			nextNode = currentNode.next;            //2, 3, 4, null
-			currentNode.next = prevNode;            //4 -> 3 -> 2 -> 1 -> null
-			prevNode = currentNode;                 //1, 2, 3, 4
-			currentNode = nextNode;                 //2, 3, 4, null
+			nextNode = currentNode.next;
+			currentNode.next = prevNode;
+			prevNode = currentNode;
+			currentNode = nextNode;
 		}
 		head = prevNode;
 	}
